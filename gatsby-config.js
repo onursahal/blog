@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Code...`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Onur Şahal`,
+      summary: `who lives and works in Istanbul.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `sahal_onur`,
     },
   },
   plugins: [
@@ -40,6 +40,13 @@ module.exports = {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-highlight-code`,
+            options: {
+              terminal: "carbon",
+              theme: "shades-of-purple",
             },
           },
           `gatsby-remark-prismjs`,
